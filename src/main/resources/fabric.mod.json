@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "transparent_cosmetics",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Transparent Cosmetics",
+  "description": "",
   "authors": [
-    "Me!"
+    "GayCookie [kawaaii]"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/gaycookie/Transparent-Cosmetics"
   },
 
   "license": "CC0-1.0",
@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "moe.kawaaii.TransparentCosmetics.TransparentCosmetics"
     ]
   },
   "mixins": [
@@ -29,7 +29,9 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.16.x",
+    "curios": "*",
+    "cosmetic-armor": "*"
   },
   "suggests": {
     "another-mod": "*"
