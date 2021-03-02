@@ -19,14 +19,21 @@ So you can show of your skin without having to unequip your armor.
 
 ### Changelogs
 <details>
-  <summary>1.16.5-1.1.0 (latest)</summary>
+  <summary>1.16.5-1.1.1 (latest)</summary>
 
-#### Added
-- Added `Transparent Ingot` and a recipe for the Blast Furnace
+  #### Changed
+  - Huge fix to the fact that the Server side needed to be using a different class!
+  Since I'm still new to this, I did not think about this and I hope this fixes it
+</details>
+<details>
+  <summary>1.16.5-1.1.0</summary>
 
-#### Changed
-- Recipes using `Transparent Ingots` now, instead of `Glass Panes`.
-- Transparency added to the textures.
+  #### Added
+  - Added `Transparent Ingot` and a recipe for the Blast Furnace
+
+  #### Changed
+  - Recipes using `Transparent Ingots` now, instead of `Glass Panes`.
+  - Transparency added to the textures.
 </details>
 
 ### Dependencies
