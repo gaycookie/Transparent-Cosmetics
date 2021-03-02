@@ -20,6 +20,12 @@
   "entrypoints": {
     "main": [
       "moe.kawaaii.TransparentCosmetics.TransparentCosmetics"
+    ],
+    "client": [
+      "moe.kawaaii.TransparentCosmetics.TransparentCosmeticsClient"
+    ],
+    "server": [
+      "moe.kawaaii.TransparentCosmetics.TransparentCosmeticsServer"
     ]
   },
   "mixins": [

@@ -12,21 +12,21 @@ import net.minecraft.util.registry.Registry;
 public class TransparentCosmetics implements ModInitializer {
 
 	public static final String MODID = "transparent_cosmetics";
-	private static final Item INGOT = new Item(new FabricItemSettings().maxCount(64));
-	private static final Item HELMET = new Item(new FabricItemSettings().maxCount(1));
-	private static final Item CHESTPLATE = new Item(new FabricItemSettings().maxCount(1));
-	private static final Item LEGGINGS = new Item(new FabricItemSettings().maxCount(1));
-	private static final Item BOOTS = new Item(new FabricItemSettings().maxCount(1));
+	public static final Item INGOT = new Item(new FabricItemSettings().maxCount(64));
+	public static final Item HELMET = new Item(new FabricItemSettings().maxCount(1));
+	public static final Item CHESTPLATE = new Item(new FabricItemSettings().maxCount(1));
+	public static final Item LEGGINGS = new Item(new FabricItemSettings().maxCount(1));
+	public static final Item BOOTS = new Item(new FabricItemSettings().maxCount(1));
 
 	@Override
 	public void onInitialize() {
-		registerItems();
+		/*registerItems();
 		createAssetPack();
 		createItemGroup();
-		createDataPack();
+		createDataPack();*/
 	}
 
-	public void registerItems() {
+	public static void registerItems() {
 		Registry.register(Registry.ITEM, new Identifier(MODID, "transparent_ingot"), INGOT);
 		Registry.register(Registry.ITEM, new Identifier(MODID, "helmet"), HELMET);
 		Registry.register(Registry.ITEM, new Identifier(MODID, "chestplate"), CHESTPLATE);
@@ -34,7 +34,7 @@ public class TransparentCosmetics implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier(MODID, "boots"), BOOTS);
 	}
 
-	public void createAssetPack() {
+	public static void createAssetPack() {
 		Artifice.registerAssetPack(new Identifier(MODID, "transparent_asset_pack"), pack -> {
 			pack.addItemModel(Registry.ITEM.getId(INGOT), model -> {
 				model.parent(new Identifier("minecraft:item/generated"));
@@ -59,7 +59,7 @@ public class TransparentCosmetics implements ModInitializer {
 		});
 	}
 
-	public void createItemGroup() {
+	public static void createItemGroup() {
 		FabricItemGroupBuilder.create(new Identifier(MODID, "items"))
 				.icon(() -> new ItemStack(CHESTPLATE))
 				.appendItems(itemStacks -> {
@@ -71,7 +71,7 @@ public class TransparentCosmetics implements ModInitializer {
 				}).build();
 	}
 
-	public void createDataPack() {
+	public static void createDataPack() {
 		Artifice.registerDataPack(new Identifier(MODID, "transparent_pack"), pack -> {
 			pack.addItemTag(new Identifier("curios", "cosmetic_helmet"), tag -> tag.value(Registry.ITEM.getId(HELMET)));
 			pack.addItemTag(new Identifier("curios", "cosmetic_chestplate"), tag -> tag.value(Registry.ITEM.getId(CHESTPLATE)));
