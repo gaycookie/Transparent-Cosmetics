@@ -1,4 +1,4 @@
-![](https://i.imgur.com/0vRw7Aa_d.webp?maxwidth=1928 "Some ugly banner!")
+![](https://i.imgur.com/qZ6Hhmz.png "Some ugly banner!")
 
 ### **Information**
 This is my first mod I've ever made for Minecraft, I've been making plugins before but I wanted to learn and experience modding too.  
