@@ -9,7 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-public class TransparentCosmetics implements ModInitializer {
+public class TransparentCosmeticsMain implements ModInitializer {
 
 	public static final String MODID = "transparent_cosmetics";
 	public static final Item INGOT = new Item(new FabricItemSettings().maxCount(64));
@@ -20,10 +20,9 @@ public class TransparentCosmetics implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		/*registerItems();
-		createAssetPack();
+		registerItems();
 		createItemGroup();
-		createDataPack();*/
+		createDataPack();
 	}
 
 	public static void registerItems() {
@@ -35,7 +34,7 @@ public class TransparentCosmetics implements ModInitializer {
 	}
 
 	public static void createAssetPack() {
-		Artifice.registerAssetPack(new Identifier(MODID, "transparent_asset_pack"), pack -> {
+		Artifice.registerAssetPack(new Identifier(MODID), pack -> {
 			pack.addItemModel(Registry.ITEM.getId(INGOT), model -> {
 				model.parent(new Identifier("minecraft:item/generated"));
 				model.texture("layer0", new Identifier(MODID, "item/ingot"));
@@ -72,13 +71,13 @@ public class TransparentCosmetics implements ModInitializer {
 	}
 
 	public static void createDataPack() {
-		Artifice.registerDataPack(new Identifier(MODID, "transparent_pack"), pack -> {
+		Artifice.registerDataPack(new Identifier(MODID), pack -> {
 			pack.addItemTag(new Identifier("curios", "cosmetic_helmet"), tag -> tag.value(Registry.ITEM.getId(HELMET)));
 			pack.addItemTag(new Identifier("curios", "cosmetic_chestplate"), tag -> tag.value(Registry.ITEM.getId(CHESTPLATE)));
 			pack.addItemTag(new Identifier("curios", "cosmetic_leggings"), tag -> tag.value(Registry.ITEM.getId(LEGGINGS)));
 			pack.addItemTag(new Identifier("curios", "cosmetic_boots"), tag -> tag.value(Registry.ITEM.getId(BOOTS)));
 
-			pack.addBlastingRecipe(new Identifier(MODID, "ingot_recipe"), processor -> {
+			pack.addBlastingRecipe(new Identifier(MODID, "ingot"), processor -> {
 				processor.ingredientItem(new Identifier("minecraft", "glass"));
 				processor.experience(0.10);
 				processor.cookingTime(600);
@@ -86,28 +85,28 @@ public class TransparentCosmetics implements ModInitializer {
 				processor.build();
 			});
 
-			pack.addShapedRecipe(new Identifier(MODID, "recipe_transparent_helmet"), processor -> {
+			pack.addShapedRecipe(new Identifier(MODID, "transparent_helmet"), processor -> {
 				processor.ingredientItem('G', Registry.ITEM.getId(INGOT));
 				processor.pattern("GGG", "G G");
 				processor.result(Registry.ITEM.getId(HELMET), 1);
 				processor.build();
 			});
 
-			pack.addShapedRecipe(new Identifier(MODID, "recipe_transparent_chestplate"), processor -> {
+			pack.addShapedRecipe(new Identifier(MODID, "transparent_chestplate"), processor -> {
 				processor.ingredientItem('G', Registry.ITEM.getId(INGOT));
 				processor.pattern("G G", "GGG", "GGG");
 				processor.result(Registry.ITEM.getId(CHESTPLATE), 1);
 				processor.build();
 			});
 
-			pack.addShapedRecipe(new Identifier(MODID, "recipe_transparent_leggings"), processor -> {
+			pack.addShapedRecipe(new Identifier(MODID, "transparent_leggings"), processor -> {
 				processor.ingredientItem('G', Registry.ITEM.getId(INGOT));
 				processor.pattern("GGG", "G G", "G G");
 				processor.result(Registry.ITEM.getId(LEGGINGS), 1);
 				processor.build();
 			});
 
-			pack.addShapedRecipe(new Identifier(MODID, "recipe_transparent_boots"), processor -> {
+			pack.addShapedRecipe(new Identifier(MODID, "transparent_boots"), processor -> {
 				processor.ingredientItem('G', Registry.ITEM.getId(INGOT));
 				processor.pattern("   ", "G G", "G G");
 				processor.result(Registry.ITEM.getId(BOOTS), 1);

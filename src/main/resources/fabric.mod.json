@@ -19,27 +19,17 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "moe.kawaaii.TransparentCosmetics.TransparentCosmetics"
+      "moe.kawaaii.TransparentCosmetics.TransparentCosmeticsMain"
     ],
     "client": [
       "moe.kawaaii.TransparentCosmetics.TransparentCosmeticsClient"
-    ],
-    "server": [
-      "moe.kawaaii.TransparentCosmetics.TransparentCosmeticsServer"
     ]
   },
-  "mixins": [
-    "modid.mixins.json"
-  ],
-
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
     "minecraft": "1.16.x",
     "curios": "*",
     "cosmetic-armor": "*"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
