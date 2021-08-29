@@ -4,19 +4,23 @@ import com.swordglowsblue.artifice.api.Artifice;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class TransparentCosmeticsMain implements ModInitializer {
-
 	public static final String MODID = "transparent_cosmetics";
 	public static final Item INGOT = new Item(new FabricItemSettings().maxCount(64));
-	public static final Item HELMET = new Item(new FabricItemSettings().maxCount(1));
-	public static final Item CHESTPLATE = new Item(new FabricItemSettings().maxCount(1));
-	public static final Item LEGGINGS = new Item(new FabricItemSettings().maxCount(1));
-	public static final Item BOOTS = new Item(new FabricItemSettings().maxCount(1));
+
+	public static final ArmorMaterial MATERIAL = new TransparentArmorMaterial();
+	public static final Item HELMET = new ArmorItem(MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings().maxCount(1));
+	public static final Item CHESTPLATE = new ArmorItem(MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings().maxCount(1));
+	public static final Item LEGGINGS = new ArmorItem(MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings().maxCount(1));
+	public static final Item BOOTS = new ArmorItem(MATERIAL, EquipmentSlot.FEET, new FabricItemSettings().maxCount(1));
 
 	@Override
 	public void onInitialize() {
@@ -37,23 +41,23 @@ public class TransparentCosmeticsMain implements ModInitializer {
 		Artifice.registerAssetPack(new Identifier(MODID), pack -> {
 			pack.addItemModel(Registry.ITEM.getId(INGOT), model -> {
 				model.parent(new Identifier("minecraft:item/generated"));
-				model.texture("layer0", new Identifier(MODID, "item/ingot"));
+				model.texture("layer0", new Identifier(MODID, "item/transparent_ingot"));
 			});
 			pack.addItemModel(Registry.ITEM.getId(HELMET), model -> {
 				model.parent(new Identifier("minecraft:item/generated"));
-				model.texture("layer0", new Identifier(MODID, "item/helmet"));
+				model.texture("layer0", new Identifier(MODID, "item/transparent_helmet"));
 			});
 			pack.addItemModel(Registry.ITEM.getId(CHESTPLATE), model -> {
 				model.parent(new Identifier("minecraft:item/generated"));
-				model.texture("layer0", new Identifier(MODID, "item/chestplate"));
+				model.texture("layer0", new Identifier(MODID, "item/transparent_chestplate"));
 			});
 			pack.addItemModel(Registry.ITEM.getId(LEGGINGS), model -> {
 				model.parent(new Identifier("minecraft:item/generated"));
-				model.texture("layer0", new Identifier(MODID, "item/leggings"));
+				model.texture("layer0", new Identifier(MODID, "item/transparent_leggings"));
 			});
 			pack.addItemModel(Registry.ITEM.getId(BOOTS), model -> {
 				model.parent(new Identifier("minecraft:item/generated"));
-				model.texture("layer0", new Identifier(MODID, "item/boots"));
+				model.texture("layer0", new Identifier(MODID, "item/transparent_boots"));
 			});
 		});
 	}
@@ -72,11 +76,6 @@ public class TransparentCosmeticsMain implements ModInitializer {
 
 	public static void createDataPack() {
 		Artifice.registerDataPack(new Identifier(MODID), pack -> {
-			pack.addItemTag(new Identifier("curios", "cosmetic_helmet"), tag -> tag.value(Registry.ITEM.getId(HELMET)));
-			pack.addItemTag(new Identifier("curios", "cosmetic_chestplate"), tag -> tag.value(Registry.ITEM.getId(CHESTPLATE)));
-			pack.addItemTag(new Identifier("curios", "cosmetic_leggings"), tag -> tag.value(Registry.ITEM.getId(LEGGINGS)));
-			pack.addItemTag(new Identifier("curios", "cosmetic_boots"), tag -> tag.value(Registry.ITEM.getId(BOOTS)));
-
 			pack.addBlastingRecipe(new Identifier(MODID, "ingot"), processor -> {
 				processor.ingredientItem(new Identifier("minecraft", "glass"));
 				processor.experience(0.10);

@@ -6,14 +6,14 @@
   "name": "Transparent Cosmetics",
   "description": "",
   "authors": [
-    "GayCookie [kawaaii]"
+    "GayCookie"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://gaycookie.dev",
     "sources": "https://github.com/gaycookie/Transparent-Cosmetics"
   },
 
-  "license": "CC0-1.0",
+  "license": "WTFPL",
   "icon": "assets/transparent_cosmetics/icon.png",
 
   "environment": "*",
@@ -28,8 +28,8 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x",
-    "curios": "*",
-    "cosmetic-armor": "*"
+    "minecraft": "1.17.*",
+    "trinkets": ">=3.0.2",
+    "cosmetic-armor": ">=1.1.0"
   }
 }
