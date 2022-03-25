@@ -1,5 +1,10 @@
 ## Changelog
 
+### 1.4.0 (1.18.*) [2022-03-25]
+#### Changed
+  - Ported to Minecraft `1.18.*`
+  - Removed dev dependencies: `Artifice`
+
 ### 1.3.0 (1.17.*) [2021-08-29]
 #### Changed
 - Ported to Minecraft `1.17.*`

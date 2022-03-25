@@ -15,11 +15,18 @@ So you can show of your skin without having to unequip your armor.
 
 ### **Technical Information**
 **Mod Loader**: Fabric  
-**Minecraft version**: 1.17.*
+**Minecraft version**: 1.18.*
 
 ### Changelogs
 <details>
-  <summary>1.17.*-1.3.0 (latest)</summary>
+  <summary>1.18.*-1.4.0 (latest)</summary>
+
+  #### Changed
+  - Ported to Minecraft `1.18.*`
+  - Removed dev dependencies: `Artifice`
+</details>
+<details>
+  <summary>1.17.*-1.3.0</summary>
 
   #### Changed
   - Ported to Minecraft `1.17.*`
