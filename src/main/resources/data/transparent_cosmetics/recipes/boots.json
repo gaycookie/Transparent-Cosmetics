@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i i",
+        "i i"
+    ],
+    "key": {
+        "i": {
+            "item": "transparent_cosmetics:transparent_ingot"
+        }
+    },
+    "result": {
+        "item": "transparent_cosmetics:boots",
+        "count": 1
+    },
+    "group": "transparent_cosmetics"
+}

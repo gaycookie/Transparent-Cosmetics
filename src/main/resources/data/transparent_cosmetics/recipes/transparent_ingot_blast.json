@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "minecraft:glass"
+    },
+    "result": "transparent_cosmetics:transparent_ingot",
+    "experience": 0.1,
+    "cookingtime": 300,
+    "group": "transparent_cosmetics"
+}

@@ -8,18 +8,35 @@ This mod was made with PvE in mind and can be considered very over powered on Pv
 So when adding this to a PvP server, make sure where you start with.
 
 Transparent Cosmetics in a mod that adds transparent "gear" to your minecraft/modpack.  
-This mod uses features from [Cosmetic-Armor](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric "Cosmetic Armor") with [Curios](https://www.curseforge.com/minecraft/mc-mods/curios-fabric "Curios").
+This mod uses features from [Cosmetic-Armor](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric "Cosmetic Armor") with [Trinkets](https://www.curseforge.com/minecraft/mc-mods/trinkets-fabric "Trinkets").
 
 When the items from this mod are placed inside the cosmetic slots it will hide the armor you're wearing in your armor slots.  
 So you can show of your skin without having to unequip your armor.
 
 ### **Technical Information**
 **Mod Loader**: Fabric  
-**Minecraft version**: 1.16.5
+**Minecraft version**: 1.18.*
 
 ### Changelogs
 <details>
-  <summary>1.16.5-1.1.1 (latest)</summary>
+  <summary>1.18.*-1.4.0 (latest)</summary>
+
+  #### Changed
+  - Ported to Minecraft `1.18.*`
+  - Removed dev dependencies: `Artifice`
+</details>
+<details>
+  <summary>1.17.*-1.3.0</summary>
+
+  #### Changed
+  - Ported to Minecraft `1.17.*`
+  - Removed dependencies: `Curious`
+  - Added dependencies: `Trinkets`
+  - The armors are now real armors, can be worn as armor items.
+  - Some code cleanup, still not clean enough! 😩
+</details>
+<details>
+  <summary>1.16.5-1.1.1</summary>
 
   #### Changed
   - Huge fix to the fact that the Server side needed to be using a different class!
@@ -37,7 +54,7 @@ So you can show of your skin without having to unequip your armor.
 </details>
 
 ### Dependencies
-| <center>![https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric](https://media.forgecdn.net/avatars/thumbnails/332/317/64/64/637463248304263412.png "Cosmetic Armor")</center>Cosmetic Armor | <center>![https://www.curseforge.com/minecraft/mc-mods/curios-fabric](https://media.forgecdn.net/avatars/thumbnails/285/311/64/64/637300660216052730.png "Curios API")</center>Curios API |
+| <center>![https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric](https://media.forgecdn.net/avatars/thumbnails/332/317/64/64/637463248304263412.png "Cosmetic Armor")</center>Cosmetic Armor | <center>![https://www.curseforge.com/minecraft/mc-mods/trinkets-fabric](https://media.forgecdn.net/avatars/thumbnails/392/688/64/64/637587073088891583.png "Trinkets API")</center>Trinkets API |
 | :- | -:|
 
 ### Included in Mod packs

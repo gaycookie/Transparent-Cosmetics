@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "iii",
+        "i i"
+    ],
+    "key": {
+        "i": {
+            "item": "transparent_cosmetics:transparent_ingot"
+        }
+    },
+    "result": {
+        "item": "transparent_cosmetics:helmet",
+        "count": 1
+    },
+    "group": "transparent_cosmetics"
+}

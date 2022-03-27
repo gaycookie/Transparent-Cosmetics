@@ -8,6 +8,6 @@ public class TransparentCosmeticsClient implements ClientModInitializer {
     @Override
     @Environment(EnvType.CLIENT)
     public void onInitializeClient() {
-        TransparentCosmeticsMain.createAssetPack();
+        // TransparentCosmeticsMain.createAssetPack();
     }
 }
