@@ -28,8 +28,8 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.19.*",
-    "trinkets": ">=3.1.0",
-    "cosmetic-armor": ">=1.2.0"
+    "minecraft": "1.19.4",
+    "trinkets": ">=3.6.0",
+    "cosmetic-armor": ">=1.5.0"
   }
 }
