@@ -15,7 +15,7 @@ So you can show of your skin without having to un-equip your armor.
 
 ### **Technical Information**
 **Mod Loader**: Fabric  
-**Minecraft version**: 1.19
+**Minecraft version**: 1.19.3
 
 ### Changelog
 **Changelog can be found [here](CHANGELOG.md)**
