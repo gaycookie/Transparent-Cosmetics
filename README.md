@@ -15,15 +15,14 @@ So you can show of your skin without having to un-equip your armor.
 
 ### **Technical Information**
 **Mod Loader**: Fabric  
-**Minecraft version**: 1.19.4 **(ONLY 1.19.4 for now.)**
+**Minecraft version**: 1.19
 
 ### Changelog
 **Changelog can be found [here](CHANGELOG.md)**
 
 ### Dependencies
-- [Cosmetic Armor [Fabric]](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric) - 1.5.0
-- [Trinkets [Fabric]](https://www.curseforge.com/minecraft/mc-mods/trinkets) - 3.6.0
-- [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api) - 0.82.0+1.19.4
+- [Cosmetic Armor [Fabric]](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-fabric)
+- [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
 
 ### Included in Mod packs
 *Your mod pack can be here, just let me know and share it me*

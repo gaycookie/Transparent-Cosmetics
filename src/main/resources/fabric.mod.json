@@ -26,15 +26,10 @@
     ]
   },
   "depends": {
+    "java": ">=17",
     "fabricloader": ">=0.14.0",
     "fabric": "*",
-<<<<<<< Updated upstream
-    "minecraft": "1.19.4",
-    "trinkets": ">=3.6.0",
-    "cosmetic-armor": ">=1.5.0"
-=======
-    "minecraft": "1.19",
+    "minecraft": "1.19.x",
     "cosmetic-armor": ">=1.4.0"
->>>>>>> Stashed changes
   }
 }
