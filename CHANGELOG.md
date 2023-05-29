@@ -1,13 +1,16 @@
 ## Changelog
 
-### 1.5.1 (1.19.4 ONLY) [2023-05-28]
+### 1.5.1+1.19.4 (1.19.4) [2023-05-29]
 #### Changed
-- Quite the code has been rewritten due changes with Minecraft and Fabric.
-- Made it compatible with 1.19.4 for now, further updates **can** follow.
+- Ported to Minecraft `1.19.4`
 
-### 1.5.0 (1.19.*) [2022-07-24] [BORKED?!]
+### 1.5.1+1.19.3 (1.19.3) [2023-05-29]
 #### Changed
-- Ported to Minecraft `1.19.*`
+- Ported to Minecraft `1.19.3`
+
+### 1.5.1+1.19.3 (1.19) [2023-05-29]
+#### Changed
+- Ported to Minecraft `1.19`
 
 ### 1.4.0 (1.18.*) [2022-03-25]
 #### Changed
