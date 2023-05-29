@@ -1,7 +1,6 @@
 package moe.kawaaii.TransparentCosmetics;
 
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
@@ -9,12 +8,12 @@ import net.minecraft.sound.SoundEvents;
 
 public class TransparentArmorMaterial implements ArmorMaterial {
   @Override
-  public int getDurability(ArmorItem.Type type) {
+  public int getDurability(EquipmentSlot slot) {
     return 0;
   }
 
   @Override
-  public int getProtection(ArmorItem.Type type) {
+  public int getProtectionAmount(EquipmentSlot slot) {
     return 0;
   }
 
