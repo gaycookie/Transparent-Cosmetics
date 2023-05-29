@@ -5,7 +5,6 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -16,10 +15,10 @@ public class TransparentCosmeticsMain implements ModInitializer {
 	public static final Item INGOT = new Item(new FabricItemSettings().maxCount(64));
 
 	public static final ArmorMaterial MATERIAL = new TransparentArmorMaterial();
-	public static final Item HELMET = new ArmorItem(MATERIAL, EquipmentSlot.HEAD, new FabricItemSettings().maxCount(1));
-	public static final Item CHESTPLATE = new ArmorItem(MATERIAL, EquipmentSlot.CHEST, new FabricItemSettings().maxCount(1));
-	public static final Item LEGGINGS = new ArmorItem(MATERIAL, EquipmentSlot.LEGS, new FabricItemSettings().maxCount(1));
-	public static final Item BOOTS = new ArmorItem(MATERIAL, EquipmentSlot.FEET, new FabricItemSettings().maxCount(1));
+	public static final Item HELMET = new ArmorItem(MATERIAL, ArmorItem.Type.HELMET, new FabricItemSettings().maxCount(1));
+	public static final Item CHESTPLATE = new ArmorItem(MATERIAL, ArmorItem.Type.CHESTPLATE, new FabricItemSettings().maxCount(1));
+	public static final Item LEGGINGS = new ArmorItem(MATERIAL, ArmorItem.Type.LEGGINGS, new FabricItemSettings().maxCount(1));
+	public static final Item BOOTS = new ArmorItem(MATERIAL, ArmorItem.Type.BOOTS, new FabricItemSettings().maxCount(1));
 
 	@Override
 	public void onInitialize() {
