@@ -1,5 +1,9 @@
 ## Changelog
 
+### 1.5.0 (1.19.*) [2022-07-24]
+#### Changed
+  - Ported to Minecraft `1.19.*`
+
 ### 1.4.0 (1.18.*) [2022-03-25]
 #### Changed
   - Ported to Minecraft `1.18.*`
